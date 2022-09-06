@@ -1,0 +1,730 @@
+@import "null-style.scss";
+
+@import "header-nav.scss";
+
+//border: 1px solid red;
+
+$padding: 24px;
+$margin: 24px;
+
+nav .nav__top a:nth-child(2) {
+    background: #eceff3 url("../img/dashboard.svg") 10px 50%/22px no-repeat;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    border-radius: 16px;
+    .row-1 {                                    //1 строка
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -12px 24px -12px;
+        height: 30%;
+        .row-1__column { 
+            padding: 0 12px;
+            flex: 1 1 25%;
+        }
+        .energy { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 25%;
+            padding: 24px;
+            height: 100%;
+
+            border-radius: 16px;
+            background: #ffffff;
+            .energy__icon-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 0 24px 0;
+                .icon { 
+                    width: 35px;
+                    height: 35px;
+                    margin: 0 0 10px 0;
+                    background: url("../img/dashboard/energy.svg") 50%/auto 100% no-repeat;
+                }
+                .title { 
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    color: #242731;
+                }
+            }
+            .scale { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-height: 112px;
+                min-height: 50%;
+                background: url("../img/dashboard/energy-scale.svg") 50%/contain no-repeat;
+                span {
+                    padding: 15px 0 0 0;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    line-height: 31px;
+                    color: #242731;
+                }
+            } 
+            &:hover {
+                background: #A162F7;
+                cursor: pointer;
+                .title {
+                    color: #ffffff;
+                }
+                .scale {
+                    background: url("../img/dashboard/hovers/energy-scale-hover.svg") 50%/contain no-repeat;
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .range {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 25%;
+            padding: 24px;
+            height: 100%;
+
+            border-radius: 16px;
+            background: #ffffff;
+            .range__icon-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 0 24px 0;
+                .icon { 
+                    width: 35px;
+                    height: 35px;
+                    margin: 0 0 10px 0;
+                    background: url("../img/dashboard/range.svg") 50%/auto 100% no-repeat;
+                }
+                .title { 
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    color: #242731;
+                }
+            }
+            .scale { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-height: 112px;
+                min-height: 50%;
+                background: url("../img/dashboard/range-scale.svg") 50%/contain no-repeat;
+                span {
+                    padding: 15px 0 0 0;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    line-height: 31px;
+                    color: #242731;
+                }
+            } 
+            &:hover {
+                background: #FF7E86;
+                cursor: pointer;
+                .title {
+                    color: #ffffff;
+                }
+                .scale {
+                    background: url("../img/dashboard/hovers/range-scale-hover.svg") 50%/contain no-repeat;
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .break-fluid {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 25%;
+            padding: 24px;
+            height: 100%;
+
+            border-radius: 16px;
+            background: #ffffff;
+            .break-fluid__icon-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 0 24px 0;
+                .icon { 
+                    width: 35px;
+                    height: 35px;
+                    margin: 0 0 10px 0;
+                    background: url("../img/dashboard/break-fluid.svg") 50%/auto 100% no-repeat;
+                }
+                .title { 
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    color: #242731;
+                    margin: 0 -24px;
+                }
+            }
+            .scale { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-height: 112px;
+                min-height: 50%;
+                background: url("../img/dashboard/break-fluid-scale.svg") 50%/contain no-repeat;
+                span {
+                    padding: 15px 0 0 0;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    line-height: 31px;
+                    color: #242731;
+                }
+            } 
+            &:hover {
+                background: #A162F7;
+                cursor: pointer;
+                .title {
+                    color: #ffffff;
+                }
+                .scale {
+                    background: url("../img/dashboard/hovers/break-fluid-scale-hover.svg") 50%/contain no-repeat;
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .tire-wear {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 25%;
+            padding: 24px;
+            height: 100%;
+
+            border-radius: 16px;
+            background: #ffffff;
+            .tire-wear__icon-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 0 24px 0;
+                .icon { 
+                    width: 35px;
+                    height: 35px;
+                    margin: 0 0 10px 0;
+                    background: url("../img/dashboard/tire-wear.svg") 50%/auto 100% no-repeat;
+                }
+                .title { 
+                    margin: 0 -24px;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    color: #242731;
+                }
+            }
+            .scale { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-height: 112px;
+                min-height: 50%;
+                background: url("../img/dashboard/tire-wear-scale.svg") 50%/contain no-repeat;
+                span {
+                    padding: 15px 0 0 0;
+                    font-weight: 700;
+                    font-size: 1.3vw;
+                    line-height: 31px;
+                    color: #242731;
+                }
+            } 
+            &:hover {
+                background: #F6CC0D;
+                cursor: pointer;
+                .title {
+                    color: #ffffff;
+                }
+                .scale {
+                    background: url("../img/dashboard/hovers/tire-wear-scale-hover.svg") 50%/contain no-repeat;
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }  
+    }
+    .row-2 {                                    //2 строка
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -12px $margin -12px;
+        height: 37%;
+        user-select: none;
+        .row-2__column {
+            padding: 0 12px;
+            flex: 1 1 50%;
+        }
+        .miles-statistics {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 24px 4% 24px;
+            height: 100%;
+
+            border-radius: 16px;
+            background: #ffffff;
+            .title {
+                margin: 0 0 20px 0;
+
+                font-weight: 700;
+                font-size: 1.2vw;
+                line-height: 100%;
+                color: #242731;
+                span {
+                    font-weight: 400;
+                }
+            }
+            .options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                min-width: 100%;
+                margin: 0 0 14px 0;
+                .options-list {
+                    display: flex;
+                    flex-wrap:nowrap;
+                    margin: 0 8px 0 0;
+                    input {
+                        position: absolute;
+                        left: -9999px;
+                    }
+                    label {
+                        cursor: pointer;
+                        margin: 0 4px 0 0;
+                        padding: 0.37em 1em;
+
+                        font-weight: 700;
+                        font-size: 0.65vw;
+                        line-height: 16px;
+                        color: #5F6165;
+                        border-radius:24px;
+                        background: #ffffff;
+                    }
+                    input:checked + label {
+                        cursor: pointer;
+                        color: #ffffff;
+                        background: #2884FF;
+                    }
+                }
+                .miles {
+                    font-weight: 700;
+                    font-size: 0.75vw;
+                    line-height: 100%;
+                    color: #5F6165;
+                }
+            }
+            .graph__row {
+                display: flex;
+                flex: 1 1 auto;
+                .graph__column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: center;
+                    flex: 1 1 auto;
+                    padding: 0 3.5%;
+                    .graph {
+                        width: 100%;
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                    .g80 {
+                        height: 75%;
+                        background: #F4F5F9;
+                        transition: 0.1s linear;
+                        &:hover {
+                            position: relative;
+                            background: #2884FF;
+                            transition: 0.1s linear;
+                            &:after {
+                                content:"";
+                                position: absolute;
+                                width: 70px;
+                                height: 40px;
+                                top: -5%;
+                                left: 70%;
+
+                                border-radius: 8px;
+                                background: #282B32 url("../img/dashboard/hovers/1pm.svg") 0 0/auto 100% no-repeat;
+                            }
+                        }
+                    }
+                    .g50 {
+                        height: 50%;
+                        background: #F4F5F9;
+                        transition: 0.1s linear;
+                        &:hover {
+                            position: relative;
+                            background: #2884FF;
+                            transition: 0.1s linear;
+                            &:after {
+                                content:"";
+                                position: absolute;
+                                width: 70px;
+                                height: 40px;
+                                top: -5%;
+                                left: 70%;
+
+                                border-radius: 8px;
+                                background: #282B32 url("../img/dashboard/hovers/2pm.svg") 0 0/auto 100% no-repeat;
+                            }
+                        }
+                    }
+                    .g95 {
+                        height: 80%;
+                        background: #F4F5F9;
+                        transition: 0.1s linear;
+                        &:hover {
+                            position: relative;
+                            background: #2884FF;
+                            transition: 0.1s linear;
+                            &:after {
+                                content:"";
+                                position: absolute;
+                                width: 70px;
+                                height: 40px;
+                                top: -5%;
+                                left: 70%;
+
+                                border-radius: 8px;
+                                background: #282B32 url("../img/dashboard/hovers/3pm.svg") 0 0/auto 100% no-repeat;
+                            }
+                        }
+                    }
+                    .g45 {
+                        height: 40%;
+                        background: #F4F5F9;
+                        transition: 0.1s linear;
+                        &:hover {
+                            position: relative;
+                            background: #2884FF;
+                            transition: 0.1s linear;
+                            &:after {
+                                content:"";
+                                position: absolute;
+                                width: 70px;
+                                height: 40px;
+                                top: -5%;
+                                left: 70%;
+
+                                border-radius: 8px;
+                                background: #282B32 url("../img/dashboard/hovers/4pm.svg") 0 0/auto 100% no-repeat;
+                            }
+                        }
+                    }
+                    .g70 {
+                        height: 70%;
+                        background: #F4F5F9;
+                        transition: 0.1s linear;
+                        &:hover {
+                            position: relative;
+                            background: #2884FF;
+                            transition: 0.1s linear;
+                            &:after {
+                                content:"";
+                                position: absolute;
+                                width: 70px;
+                                height: 40px;
+                                top: -5%;
+                                left: 70%;
+
+                                border-radius: 8px;
+                                background: #282B32 url("../img/dashboard/hovers/5pm.svg") 0 0/auto 100% no-repeat;
+                            }
+                        }
+                    }
+                    .g25 {
+                        height: 25%;
+                        background: #F4F5F9;
+                        transition: 0.1s linear;
+                        &:hover {
+                            position: relative;
+                            background: #2884FF;
+                            transition: 0.1s linear;
+                            &:after {
+                                content:"";
+                                position: absolute;
+                                width: 70px;
+                                height: 40px;
+                                top: -5%;
+                                left: 70%;
+
+                                border-radius: 8px;
+                                background: #282B32 url("../img/dashboard/hovers/6pm.svg") 0 0/auto 100% no-repeat;
+                            }
+                        }
+                    }
+                    .g35 {
+                        height: 35%;
+                        background: #F4F5F9;
+                        transition: 0.1s linear;
+                        &:hover {
+                            position: relative;
+                            background: #2884FF;
+                            transition: 0.1s linear;
+                            &:after {
+                                content:"";
+                                position: absolute;
+                                width: 70px;
+                                height: 40px;
+                                top: -5%;
+                                left: 70%;
+
+                                border-radius: 8px;
+                                background: #282B32 url("../img/dashboard/hovers/7pm.svg") 0 0/auto 100% no-repeat;
+                            }
+                        }
+                    }
+                    .hour {
+                        padding: 8px 0 0 0;
+                        width: 200%;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 0.7vw;
+                        line-height: 18px;
+                        color: #808191;
+                        background-color: #ffffff;
+                    }
+                }
+                .graph__column:not(:last-child) {
+                    border-right: 1px solid #F2F2F2;
+                }
+            }
+            
+        }
+        .car-statistics {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 24px 4% 24px;
+            height: 100%;
+
+            border-radius: 16px;
+            background: #ffffff;
+            .title {
+                margin: 0 0 20px 0;
+
+                font-weight: 700;
+                font-size: 1.2vw;
+                line-height: 100%;
+                color: #242731;
+                span {
+                    font-weight: 400;
+                }
+            }
+            .options {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                min-width: 100%;
+                margin: 0 0 14px 0;
+                .options-list {
+                    display: flex;
+                    flex-wrap:nowrap;
+                    margin: 0 8px 0 0;
+                    border-radius: 8px;
+                    background: #F5F4F6;
+                    input {
+                        position: absolute;
+                        left: -9999px;
+                    }
+                    label {
+                        cursor: pointer;
+                        margin: 0 4px 0 0;
+                        padding: 0.37em 1em;
+
+                        font-weight: 700;
+                        font-size: 0.65vw;
+                        line-height: 16px;
+                        color: #5F6165;
+                        border-radius:24px;
+                    }
+                    input:checked + label {
+                        cursor: pointer;
+                        color: #ffffff;
+                        background: #FF764C;
+                    }
+                }
+                .miles {
+                    font-weight: 700;
+                    font-size: 0.75vw;
+                    line-height: 100%;
+                    color: #5F6165;
+                }
+            }
+            .graph__row {
+                position: relative;
+                display: flex;
+                flex: 1 1 auto;
+                &:before {
+                    position: absolute;
+                    content:"";
+                    min-width: 100%;
+                    height: 100%;
+                    left:0;
+                    bottom:0;
+                    background: url("../img/dashboard/car-statistics-graph.png") 50%/100% 80% no-repeat;
+                }
+                .graph__column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: center;
+                    flex: 1 1 auto;
+                    padding: 0 3.5%;
+                    .graph {
+                        width: 1px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        height: 100%;
+                        background: #F2F2F2;
+                    }
+                    .hour {
+                        padding: 8px 0 0 0;
+                        width: 200%;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 0.7vw;
+                        line-height: 18px;
+                        color: #808191;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+    .row-3 {                                    //3 строка
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 auto;
+        margin: 0 -12px;
+        &__column {
+            height: 100%;
+            width: 33.333%;
+            padding: 0 12px;
+            .car {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                width: 100%;
+                padding: $padding;
+
+                border-radius: 16px;
+                .recommend {
+                    position: relative;
+                    width: 100%;
+                    padding: 0 0 0 38px;
+
+                    font-size: 1.1vw;
+                    font-weight: 700;
+                    line-height: 100%;
+                    color: #242731;
+                    &:before {
+                        content:"";
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-55%);
+                        background: url("../img/dashboard/lines-round.svg") 50%/24px no-repeat;
+                    }
+                }
+                .picture {
+                    min-height: 50%;
+                    width: 100%;
+                }
+                .title {
+                    width: 100%;
+                    margin: 8px 0 0 0;
+
+                    font-size: 1.15vw;
+                    font-weight: 700;
+                    line-height: 100%;
+                    color: #242731;
+                }
+                .info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 0 4px 0;
+                    div:nth-child(1) {
+                        height: 20px;
+                        width: 20px;
+                        margin: 0 6% 0 0;
+
+                        background: url("../img/dashboard/re.svg") 50%/20px no-repeat;
+                    }
+                    div:nth-child(2) {
+                        margin: 0 6% 0 0;
+
+                        font-size: 0.9vw;
+                        font-weight: 500;
+                        line-height: 100%;
+                        color: #72767C;
+                    }
+                    div:nth-child(3) {
+                        height: 18px;
+                        width: 18px;
+                        margin: 0 6% 0 0;
+
+                        background: url("../img/dashboard/plus.svg") 50%/18px no-repeat;
+                    }
+                    div:nth-child(4) {
+                        flex: 1 1 auto;
+                        height: 16px;
+                        margin: 0 16px 0 0;
+
+                        background: url("../img/dashboard/lightning.svg") 0 50%/16px no-repeat;
+                    }
+                    div:nth-child(5) {
+                        font-size: 0.9vw;
+                        font-weight: 500;
+                        line-height: 100%;
+                        color: #72767C;
+                    }
+                }
+            }
+            .first-car {
+                background: #E1DFA4;
+                .picture {
+                    background: url("../img/dashboard/volvo_v60.png") 50%/contain no-repeat;
+                }
+            }
+            .second-car {
+                background: #E3ECF1;
+                .picture {
+                    background: url("../img/dashboard/porsche.png") 50%/contain no-repeat;
+                }
+            }
+            .third-car {
+                background: #F4E3E5;
+                .picture {
+                    background: url("../img/dashboard/mini-cooper.png") 50%/contain no-repeat;
+                }
+            }
+        }
+    }
+}
