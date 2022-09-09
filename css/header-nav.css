@@ -78,11 +78,13 @@ body {
 }
 
 .wrapper {
+  border: 1px solid violet;
   display: flex;
-  max-width: 68%;
-  min-height: 100%;
+  width: 68%;
+  height: 100vh;
   padding: 32px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 nav {
@@ -118,7 +120,7 @@ nav .nav__top a, nav .nav__bottom a {
   margin: 0 0 8px 0;
   padding: 10px 10px 10px 45px;
   font-weight: 500;
-  font-size: 0.8vw;
+  font-size: 1.3rem;
   line-height: 100%;
   color: #5F6165;
 }
@@ -185,6 +187,7 @@ nav .nav__bottom a:last-child:hover {
 }
 
 .main {
+  border: 1px solid green;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;

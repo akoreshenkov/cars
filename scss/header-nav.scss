@@ -12,12 +12,13 @@ body {
     background: #F5F5F5;
 }
 
-.wrapper {
+.wrapper {border: 1px solid violet;
     display: flex;
-    max-width: 68%;
-    min-height: 100%;
+    width: 68%;
+    height: 100vh;
     padding: 32px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 nav {
@@ -55,7 +56,7 @@ nav {
         padding: 10px 10px 10px 45px;
 
         font-weight: 500;
-        font-size: 0.8vw;
+        font-size: 1.3rem;
         line-height: 100%;
         color: #5F6165;
     }
@@ -127,7 +128,7 @@ nav {
     }
 }
 
-.main {
+.main { border: 1px solid green;
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;

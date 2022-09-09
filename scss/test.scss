@@ -1,0 +1,326 @@
+@import "null-style.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+//border: 1px solid red;
+
+$border-radius: 1.5vmin;
+$padding: 2vmin;
+$margin: 2vmin;
+
+
+html {
+    font-size: 16px;
+  }
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: #DBDBDB;
+    padding: 3vh;
+}
+
+.wrapper-container {//border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+}
+
+.wrapper {//border: 1px solid yellowgreen;
+    display: flex;
+    margin: 0 auto;
+    flex: 0 1 121vmin;
+    max-width: 115vmin;
+    //max-width: 100%;
+    min-height: 100%;
+    .wrapper__row {
+        flex: 1 1 auto;
+        display: flex;
+        .wrapper__column-left {
+            width: 21vmin;
+            margin-right: $margin;
+            background: #ffffff;
+            border-radius: $border-radius;
+            padding: $padding;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .wrapper__column-left__top {
+                margin-bottom: $margin;
+
+                .wrapper__column-left__top-item {
+                    display: inline-block;
+                    width: 100%;
+                    margin: 0 0 0.75vh 0;
+                    padding: 0 0 0 3.5vh;
+                    position: relative;
+
+                    border-radius: 8px;
+                    font-weight: 500;
+                    font-size: 1.4vh;
+                    line-height: 250%;
+
+                    color: #5F6165;
+
+                    &:first-child {
+                        font-size: 2.5vh;
+                        font-weight: 700;
+                        line-height: 140%;
+                        background: none;
+                        margin: 0 0 2.5vh 0;
+                        background: url("../img/logo.svg") 0 50%/2.5vh no-repeat;
+                    }
+                    &:last-child {
+                        margin: 0 0 0 0;
+                    }
+
+                    &:nth-child(2) {
+                        background: #F3F5F8 url("../img/dashboard.svg") 1vh 50%/1.85vh no-repeat;
+                    }
+                    &:nth-child(3) {
+                        background: url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                    &:nth-child(4) {
+                        background: url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                    &:nth-child(5) {
+                        background: url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                    &:nth-child(6) {
+                        background: url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                    &:nth-child(7) {
+                        background: url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                    &:nth-child(8) {
+                        background: url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                    &:nth-child(9) {
+                        background: url("../img/messages.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/messages.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                }
+                
+                
+            }
+            .wrapper__column-left__bottom {
+
+                .wrapper__column-left__bottom-item {
+                    display: inline-block;
+                    width: 100%;
+                    margin: 0 0 0.75vh 0;
+                    padding: 0 0 0 3.5vh;
+                    position: relative;
+
+                    border-radius: 6px;
+                    font-weight: 500;
+                    font-size: 1.4vh;
+                    line-height: 250%;
+
+                    color: #5F6165;
+                    &:nth-child(1) {
+                        background: url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                    &:last-child {
+                        margin: 0 0 0 0;
+                        background: url("../img/log-out.svg") 1vh 50%/1.85vh no-repeat;
+                        &:hover {
+                            background: #f8fafd url("../img/log-out.svg") 1vh 50%/1.85vh no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        .wrapper__column-right {
+            display: flex;
+            flex-direction: column;
+            //width: 68vmin;
+            flex: 1 1 68vmin;
+
+            border-radius: $border-radius;
+            .header {
+                width: 100%;
+                height: 7vh;
+                margin: 0 0 $margin 0;
+                padding: 1.5vmin;
+
+                border-radius: $border-radius;
+                background: #ffffff;
+
+                &__row {
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                &__column-left {
+                    height: 100%;
+                    .input {
+                        height: 100%;
+                        position: relative;
+                        &:before {
+                            content:"";
+                            cursor: pointer;
+                            display: inline-block;
+                            height: 100%;
+                            width: 3vh;
+                            position: absolute;
+                            left: 0.4vh;
+                            top: 50%;
+                            transform: translateY(-50%);
+            
+                            border-radius: 8px;
+                            background: #F5F4F6 url("../img/search.svg") 50%/1.6vh no-repeat;
+                        }
+                        input {
+                            width: 27.777vh;
+                            height: 100%;
+                            background: #F5F4F6;
+                            border-radius: 8px;
+                            font-weight: 500;
+                            font-size: 1.6vh;
+                            line-height: 100%;
+                            padding: 0 0 0 4vh;
+                            caret-color: #EF9011;
+                        }
+                    }
+                }
+                &__column-right {
+                    height: 100%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    .notification {
+                        cursor: pointer;
+                        height: 100%;
+                        width: 1.85vh;
+                        margin-right: $margin;
+
+                        background: url("../img/notification.svg") 50%/1.85vh auto no-repeat;
+                    }
+                    .profile {
+                        height: 4.444vh;
+                        width: 4.444vh;
+                        background: url("../img/profile.png") 50%/4.444vh no-repeat;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .content {
+                width: 100%;
+                // height: 85vh;
+                flex: 1 1 85vh;
+                
+                border-radius: $border-radius;
+                overflow: auto;
+
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+                }
+                                            //все что ниже только для первой страницы
+                .container {
+                    min-height: 100%;
+                    display: flex;
+                    min-height: 100%;
+                    flex-direction: column; 
+                    
+                    &__row-1 {//border: 1px solid red;
+                        //min-height: 24vh;
+                        
+                        .row-1__flex-container {
+                            display: flex;
+                            //min-height: 24vh;
+                            flex-wrap: wrap;
+                            margin: 0 -1vmin;
+
+                            .row-1__column {//border: 1px solid blue;
+                                min-width: 229px;
+                                min-height: 24vh;
+                                flex: 1 1 auto;
+                                padding: 0 calc($margin/2);
+                                margin: 0 0 $margin 0;
+                                .row-1__items {
+                                    background: #909090;
+                                    height: 100%;
+                                    border-radius: $border-radius;
+                                }
+                            }
+                        }
+                    }
+                    &__row-2 {//border: 6px solid red;
+                        
+                        .row-2__flex-container {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin: 0 -1vmin;
+                            min-height: 100%;
+
+                            .row-2__column {
+                                min-width: 458px;
+                                min-height: 41vh;
+                                flex: 1 1 auto;
+                                padding: 0 calc($margin/2);
+                                margin: 0 0 $margin 0;
+                                .row-2__items {
+                                    background: #E1A4A4;
+                                    height: 100%;
+                                    border-radius: $border-radius;
+                                }
+                                
+                            }
+                        }
+                    }
+                    &__row-3 {//border: 10px solid red;
+                        
+                        .row-3__flex-container {
+                            display: flex;
+                            margin: 0 -1vmin;
+
+                            .row-3__column {//border: 1px solid blue;
+                                //min-width: 313px;
+                                min-height: 15.7vh;
+                                flex: 1 1 313px;
+                                padding: 0 calc($margin/2);
+                                .row-3__items {
+                                    background: #FFFC9B;
+                                    height: 100%;
+                                    border-radius: $border-radius;
+                                }
+                            }
+                        }
+                    }
+                }
+                                            //все что выше только для первой страницы
+            }
+        }
+    }
+}
+

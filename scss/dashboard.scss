@@ -10,21 +10,34 @@ $margin: 24px;
 nav .nav__top a:nth-child(2) {
     background: #eceff3 url("../img/dashboard.svg") 10px 50%/22px no-repeat;
   }
+  nav .nav__top a:hover:nth-child(2) {
+    background: #eceff3 url("../img/dashboard.svg") 10px 50%/22px no-repeat;
+  }
 
-.container {
+.container-wrapper {border: 1px solid black;
+    display: flex;
+    flex: 0 0 auto;
+    min-height: 90%;
+    overflow: hidden;
+}
+.container {border: 1px solid red;
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    //overflow: hidden;
 
     border-radius: 16px;
     .row-1 {                                    //1 строка
         display: flex;
         justify-content: space-between;
-        margin: 0 -12px 24px -12px;
-        height: 30%;
+        margin: 0 -12px 0 -12px;
+        min-height: 272px;
+        flex-wrap: wrap;
         .row-1__column { 
+            min-width: 250px;
             padding: 0 12px;
             flex: 1 1 25%;
+            margin: 0 0 24px 0;
         }
         .energy { 
             display: flex;
@@ -268,12 +281,14 @@ nav .nav__top a:nth-child(2) {
     .row-2 {                                    //2 строка
         display: flex;
         justify-content: space-between;
-        margin: 0 -12px $margin -12px;
+        margin: 0 -12px 0 -12px;
         height: 37%;
         user-select: none;
         .row-2__column {
             padding: 0 12px;
             flex: 1 1 50%;
+            margin: 0 0 24px 0;
+            min-height: 272px;
         }
         .miles-statistics {
             display: flex;
@@ -542,8 +557,7 @@ nav .nav__top a:nth-child(2) {
                 .options-list {
                     display: flex;
                     flex-wrap:nowrap;
-                    margin: 0 8px 0 0;
-                    border-radius: 8px;
+                    border-radius: 24px;
                     background: #F5F4F6;
                     input {
                         position: absolute;
@@ -559,6 +573,9 @@ nav .nav__top a:nth-child(2) {
                         line-height: 16px;
                         color: #5F6165;
                         border-radius:24px;
+                    }
+                    label:last-child {
+                        margin: 0 0 0 0;
                     }
                     input:checked + label {
                         cursor: pointer;
@@ -623,6 +640,7 @@ nav .nav__top a:nth-child(2) {
             height: 100%;
             width: 33.333%;
             padding: 0 12px;
+            min-height: 272px;
             .car {
                 display: flex;
                 flex-direction: column;

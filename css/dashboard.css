@@ -151,11 +151,13 @@ body {
 }
 
 .wrapper {
+  border: 1px solid violet;
   display: flex;
-  max-width: 68%;
-  min-height: 100%;
+  width: 68%;
+  height: 100vh;
   padding: 32px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 nav {
@@ -191,7 +193,7 @@ nav .nav__top a, nav .nav__bottom a {
   margin: 0 0 8px 0;
   padding: 10px 10px 10px 45px;
   font-weight: 500;
-  font-size: 0.8vw;
+  font-size: 1.3rem;
   line-height: 100%;
   color: #5F6165;
 }
@@ -258,6 +260,7 @@ nav .nav__bottom a:last-child:hover {
 }
 
 .main {
+  border: 1px solid green;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -334,7 +337,20 @@ nav .nav__top a:nth-child(2) {
   background: #eceff3 url("../img/dashboard.svg") 10px 50%/22px no-repeat;
 }
 
+nav .nav__top a:hover:nth-child(2) {
+  background: #eceff3 url("../img/dashboard.svg") 10px 50%/22px no-repeat;
+}
+
+.container-wrapper {
+  border: 1px solid black;
+  display: flex;
+  flex: 0 0 auto;
+  min-height: 90%;
+  overflow: hidden;
+}
+
 .container {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
@@ -343,12 +359,15 @@ nav .nav__top a:nth-child(2) {
 .container .row-1 {
   display: flex;
   justify-content: space-between;
-  margin: 0 -12px 24px -12px;
-  height: 30%;
+  margin: 0 -12px 0 -12px;
+  min-height: 272px;
+  flex-wrap: wrap;
 }
 .container .row-1 .row-1__column {
+  min-width: 250px;
   padding: 0 12px;
   flex: 1 1 25%;
+  margin: 0 0 24px 0;
 }
 .container .row-1 .energy {
   display: flex;
@@ -587,7 +606,7 @@ nav .nav__top a:nth-child(2) {
 .container .row-2 {
   display: flex;
   justify-content: space-between;
-  margin: 0 -12px 24px -12px;
+  margin: 0 -12px 0 -12px;
   height: 37%;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -597,6 +616,8 @@ nav .nav__top a:nth-child(2) {
 .container .row-2 .row-2__column {
   padding: 0 12px;
   flex: 1 1 50%;
+  margin: 0 0 24px 0;
+  min-height: 272px;
 }
 .container .row-2 .miles-statistics {
   display: flex;
@@ -854,8 +875,7 @@ nav .nav__top a:nth-child(2) {
 .container .row-2 .car-statistics .options .options-list {
   display: flex;
   flex-wrap: nowrap;
-  margin: 0 8px 0 0;
-  border-radius: 8px;
+  border-radius: 24px;
   background: #F5F4F6;
 }
 .container .row-2 .car-statistics .options .options-list input {
@@ -871,6 +891,9 @@ nav .nav__top a:nth-child(2) {
   line-height: 16px;
   color: #5F6165;
   border-radius: 24px;
+}
+.container .row-2 .car-statistics .options .options-list label:last-child {
+  margin: 0 0 0 0;
 }
 .container .row-2 .car-statistics .options .options-list input:checked + label {
   cursor: pointer;
@@ -932,6 +955,7 @@ nav .nav__top a:nth-child(2) {
   height: 100%;
   width: 33.333%;
   padding: 0 12px;
+  min-height: 272px;
 }
 .container .row-3__column .car {
   display: flex;
