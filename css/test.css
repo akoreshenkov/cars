@@ -101,16 +101,16 @@ body {
 }
 .wrapper .wrapper__row .wrapper__column-left {
   width: 21vmin;
-  margin-right: 2vmin;
+  margin-right: 2vh;
   background: #ffffff;
-  border-radius: 1.5vmin;
-  padding: 2vmin;
+  border-radius: 1.5vh;
+  padding: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top {
-  margin-bottom: 2vmin;
+  margin-bottom: 2vh;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item {
   display: inline-block;
@@ -209,14 +209,14 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1 1 68vmin;
-  border-radius: 1.5vmin;
+  border-radius: 1.5vh;
 }
 .wrapper .wrapper__row .wrapper__column-right .header {
   width: 100%;
   height: 7vh;
-  margin: 0 0 2vmin 0;
+  margin: 0 0 2vh 0;
   padding: 1.5vh;
-  border-radius: 1.5vmin;
+  border-radius: 1.5vh;
   background: #ffffff;
 }
 .wrapper .wrapper__row .wrapper__column-right .header__row {
@@ -278,7 +278,7 @@ body {
 .wrapper .wrapper__row .wrapper__column-right .content {
   width: 100%;
   flex: 1 1 85vh;
-  border-radius: 1.5vmin;
+  border-radius: 1.5vh;
   overflow-y: auto;
   overflow-x: hidden;
   -ms-overflow-style: none;
@@ -309,7 +309,7 @@ body {
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-1 .row-1__flex-container .row-1__column .row-1__items {
   background: #909090;
   height: 100%;
-  border-radius: 1.5vmin;
+  border-radius: 1.5vh;
 }
 @media (max-width: 600px) {
   .wrapper .wrapper__row .wrapper__column-right .content .container__row-1 .row-1__flex-container .row-1__column {
@@ -317,12 +317,11 @@ body {
     min-height: 24vh;
     flex: 1 1 auto;
     padding: 0 1vmin;
-    margin: 0 0 2vmin 0;
   }
   .wrapper .wrapper__row .wrapper__column-right .content .container__row-1 .row-1__flex-container .row-1__column .row-1__items {
     background: #909090;
     height: 100%;
-    border-radius: 1.5vmin;
+    border-radius: 1.5vh;
   }
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container {
@@ -333,14 +332,339 @@ body {
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column {
   min-width: 408px;
   min-height: 35vh;
-  flex: 1 1 auto;
-  padding: 0 1vmin;
+  flex: 1 1 50%;
+  padding: 0 1vh;
   margin: 0 0 2vmin 0;
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items {
-  background: #E1A4A4;
   height: 100%;
-  border-radius: 1.5vmin;
+  border-radius: 1.5vh;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh;
+  height: 100%;
+  border-radius: 1.5vh;
+  background: #ffffff;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .title {
+  margin: 0 0 2.222vh 0;
+  font-weight: 700;
+  font-size: 1.9vh;
+  line-height: 2.457vh;
+  color: #242731;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .title span {
+  font-weight: 400;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  margin: 0 0 1.3vh 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .options .options-list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 8px 0 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .options .options-list input {
+  position: absolute;
+  left: -9999px;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .options .options-list label {
+  cursor: pointer;
+  margin: 0 0.37vh 0 0;
+  padding: 0.524vh 1.311vh;
+  font-weight: 700;
+  font-size: 1.2vh;
+  line-height: 1.4vh;
+  color: #5F6165;
+  border-radius: 16px;
+  background: #ffffff;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .options .options-list input:checked + label {
+  cursor: pointer;
+  color: #ffffff;
+  background: #2884FF;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .options .miles {
+  font-weight: 700;
+  font-size: 1.5vh;
+  line-height: 100%;
+  color: #5F6165;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row {
+  display: flex;
+  flex: 1 1 auto;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  flex: 1 1 auto;
+  padding: 0 3.5%;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .graph {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g80 {
+  height: 75%;
+  background: #F4F5F9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g80:hover {
+  position: relative;
+  background: #2884FF;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g80:hover:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: -5%;
+  left: 70%;
+  border-radius: 8px;
+  background: #282B32 url("../img/dashboard/hovers/1pm.svg") 0 0/auto 100% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g50 {
+  height: 50%;
+  background: #F4F5F9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g50:hover {
+  position: relative;
+  background: #2884FF;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g50:hover:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: -5%;
+  left: 70%;
+  border-radius: 8px;
+  background: #282B32 url("../img/dashboard/hovers/2pm.svg") 0 0/auto 100% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g95 {
+  height: 80%;
+  background: #F4F5F9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g95:hover {
+  position: relative;
+  background: #2884FF;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g95:hover:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: -5%;
+  left: 70%;
+  border-radius: 8px;
+  background: #282B32 url("../img/dashboard/hovers/3pm.svg") 0 0/auto 100% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g45 {
+  height: 40%;
+  background: #F4F5F9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g45:hover {
+  position: relative;
+  background: #2884FF;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g45:hover:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: -5%;
+  left: 70%;
+  border-radius: 8px;
+  background: #282B32 url("../img/dashboard/hovers/4pm.svg") 0 0/auto 100% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g70 {
+  height: 70%;
+  background: #F4F5F9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g70:hover {
+  position: relative;
+  background: #2884FF;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g70:hover:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: -5%;
+  left: 70%;
+  border-radius: 8px;
+  background: #282B32 url("../img/dashboard/hovers/5pm.svg") 0 0/auto 100% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g25 {
+  height: 25%;
+  background: #F4F5F9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g25:hover {
+  position: relative;
+  background: #2884FF;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g25:hover:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: -5%;
+  left: 70%;
+  border-radius: 8px;
+  background: #282B32 url("../img/dashboard/hovers/6pm.svg") 0 0/auto 100% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g35 {
+  height: 35%;
+  background: #F4F5F9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g35:hover {
+  position: relative;
+  background: #2884FF;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .g35:hover:after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  top: -5%;
+  left: 70%;
+  border-radius: 8px;
+  background: #282B32 url("../img/dashboard/hovers/7pm.svg") 0 0/auto 100% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column .hour {
+  padding: 1vh 0 0 0;
+  width: 200%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5vh;
+  line-height: 18px;
+  color: #808191;
+  background-color: #ffffff;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .miles-statistics .graph__row .graph__column:not(:last-child) {
+  border-right: 1px solid #F2F2F2;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 24px 4% 24px;
+  height: 100%;
+  border-radius: 16px;
+  background: #ffffff;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .title {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 1.2vw;
+  line-height: 100%;
+  color: #242731;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .title span {
+  font-weight: 400;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  margin: 0 0 14px 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .options .options-list {
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 24px;
+  background: #F5F4F6;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .options .options-list input {
+  position: absolute;
+  left: -9999px;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .options .options-list label {
+  cursor: pointer;
+  margin: 0 4px 0 0;
+  padding: 0.37em 1em;
+  font-weight: 700;
+  font-size: 0.65vw;
+  line-height: 16px;
+  color: #5F6165;
+  border-radius: 24px;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .options .options-list label:last-child {
+  margin: 0 0 0 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .options .options-list input:checked + label {
+  cursor: pointer;
+  color: #ffffff;
+  background: #FF764C;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .options .miles {
+  font-weight: 700;
+  font-size: 0.75vw;
+  line-height: 100%;
+  color: #5F6165;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .graph__row {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .graph__row:before {
+  position: absolute;
+  content: "";
+  min-width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background: url("../img/dashboard/car-statistics-graph.png") 50%/100% 80% no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .graph__row .graph__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  flex: 1 1 auto;
+  padding: 0 3.5%;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .graph__row .graph__column .graph {
+  width: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 100%;
+  background: #F2F2F2;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items .car-statistics .graph__row .graph__column .hour {
+  padding: 8px 0 0 0;
+  width: 200%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.7vw;
+  line-height: 18px;
+  color: #808191;
+  background-color: #ffffff;
 }
 @media (max-width: 600px) {
   .wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column {
@@ -348,12 +672,10 @@ body {
     min-height: 41vh;
     flex: 1 1 auto;
     padding: 0 1vmin;
-    margin: 0 0 2vmin 0;
   }
   .wrapper .wrapper__row .wrapper__column-right .content .container__row-2 .row-2__flex-container .row-2__column .row-2__items {
-    background: #E1A4A4;
     height: 100%;
-    border-radius: 1.5vmin;
+    border-radius: 1.5vh;
   }
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container {
@@ -366,9 +688,19 @@ body {
   padding: 0 1vmin;
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column .row-3__items {
-  background: #FFFC9B;
+  background: #ffffff;
   height: 100%;
-  border-radius: 1.5vmin;
+  border-radius: 1.5vh;
+}
+@media (max-width: 600px) {
+  .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column {
+    padding: 0 1vmin;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column .row-3__items {
+    background: #ffffff;
+    height: 100%;
+    border-radius: 1.5vh;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -399,9 +731,9 @@ body {
     justify-content: start;
     align-items: center;
     background: #ffffff;
-    border-radius: 1.5vmin;
-    padding: 1.5vh;
-    margin: 0 0 2vw 0;
+    border-radius: 1.5vh;
+    padding: 2vh 1.5vh;
+    margin: 0 0 2vmin 0;
   }
   .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top {
     margin: 0;
@@ -450,14 +782,14 @@ body {
     flex-direction: column;
     flex: 0 1 auto;
     overflow: hidden;
-    border-radius: 1.5vmin;
+    border-radius: 1.5vh;
   }
   .wrapper .wrapper__row .wrapper__column-right .header {
     width: 100%;
     height: 7vh;
-    margin: 0 0 2vw 0;
+    margin: 0 0 2vmin 0;
     padding: 1.5vh;
-    border-radius: 1.5vmin;
+    border-radius: 1.5vh;
     background: #ffffff;
   }
   .wrapper .wrapper__row .wrapper__column-right .header__row {
@@ -519,7 +851,7 @@ body {
   .wrapper .wrapper__row .wrapper__column-right .content {
     width: 100%;
     flex: 1 1 auto;
-    border-radius: 1.5vmin;
+    border-radius: 1.5vh;
     overflow-y: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
