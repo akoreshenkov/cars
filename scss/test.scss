@@ -28,7 +28,7 @@ body {
 .wrapper {//border: 5px solid yellowgreen;
     display: flex;
 
-    flex: 1 1 115vmin;                  //изменение ширины на весь экран для больших моников
+    flex: 0 1 115vmin;                  //изменение ширины на весь экран для больших моников
     
     max-width: 100%;
     min-height: 100%;
@@ -251,8 +251,6 @@ body {
                     flex-direction: column; 
                     
                     &__row-1 {//border: 1px solid red;
-                        //min-height: 24vh;
-                        
                         .row-1__flex-container {
                             display: flex;
                             //min-height: 24vh;
@@ -260,25 +258,261 @@ body {
                             margin: 0 -1vmin;
 
                             .row-1__column {//border: 1px solid blue;
-                                min-width: 203px;
+                                min-width: 17.545vh;
                                 min-height: 24vh;
-                                flex: 1 1 auto;
+                                flex: 1 1 25%;
                                 padding: 0 1vmin;
                                 margin: 0 0 2vmin 0;
                                 .row-1__items {
-                                    background: #909090;
                                     height: 100%;
+                                    
                                     border-radius: $border-radius;
+                            
+                                    .energy { 
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 2.222vh;
+                                        background: #ffffff;
+                                        height: 100%;
+                                        border-radius: $border-radius;
+                                        .energy__icon-title {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            margin: 0 0 2.777vh 0;
+                                            .icon { 
+                                                width: 3.24vh;
+                                                height: 3.24vh;
+                                                margin: 0 0 1vh 0;
+                                                background: url("../img/dashboard/energy.svg") 50%/auto 100% no-repeat;
+                                            }
+                                            .title { 
+                                                text-align: center;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                color: #242731;
+                                            }
+                                        }
+                                        .scale {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                            height: 10.37vh;
+                                            background: url("../img/dashboard/energy-scale.svg") 50%/contain no-repeat;
+                                            span {
+                                                padding: 1.388vh 0 0 0;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                line-height: 130%;
+                                                color: #242731;
+                                            }
+                                        } 
+                                    }
+                                    .range {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background: #ffffff;
+                                        padding: 2.222vh;
+                                        height: 100%;
+                            
+                                        border-radius: $border-radius;
+                                        background: #ffffff;
+                                        .range__icon-title {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            margin: 0 0 2.777vh 0;
+                                            .icon { 
+                                                width: 3.24vh;
+                                                height: 3.24vh;
+                                                margin: 0 0 1vh 0;
+                                                background: url("../img/dashboard/range.svg") 50%/auto 100% no-repeat;
+                                            }
+                                            .title { 
+                                                text-align: center;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                color: #242731;
+                                            }
+                                        }
+                                        .scale { 
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                            height: 10.37vh;
+                                            background: url("../img/dashboard/range-scale.svg") 50%/contain no-repeat;
+                                            span {
+                                                padding: 1.388vh 0 0 0;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                line-height: 130%;
+                                                color: #242731;
+                                            }
+                                        } 
+                                    }
+                                    .break-fluid {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background: #ffffff;
+                                        padding: 2.222vh;
+                                        height: 100%;
+                            
+                                        border-radius: $border-radius;
+                                        background: #ffffff;
+                                        .break-fluid__icon-title {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            margin: 0 0 2.777vh 0;
+                                            .icon { 
+                                                width: 3.24vh;
+                                                height: 3.24vh;
+                                                margin: 0 0 1vh 0;
+                                                background: url("../img/dashboard/break-fluid.svg") 50%/auto 100% no-repeat;
+                                            }
+                                            .title {
+                                                height: 2.3vh;
+                                                text-align: center;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                color: #242731;
+                                            }
+                                        }
+                                        .scale { 
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                            height: 10.37vh;
+                                            background: url("../img/dashboard/break-fluid-scale.svg") 50%/contain no-repeat;
+                                            span {
+                                                padding: 1.388vh 0 0 0;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                line-height: 130%;
+                                                color: #242731;
+                                            }
+                                        } 
+                                        &:hover {
+                                            background: #A162F7;
+                                            cursor: pointer;
+                                            .title {
+                                                color: #ffffff;
+                                            }
+                                            .scale {
+                                                background: url("../img/dashboard/hovers/break-fluid-scale-hover.svg") 50%/contain no-repeat;
+                                                span {
+                                                    color: #ffffff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .tire-wear {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background: #ffffff;
+                                        padding: 2.222vh;
+                                        height: 100%;
+                            
+                                        border-radius: $border-radius;
+                                        background: #ffffff;
+                                        .tire-wear__icon-title {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            margin: 0 0 2.777vh 0;
+                                            .icon { 
+                                                width: 3.24vh;
+                                                height: 3.24vh;
+                                                margin: 0 0 1vh 0;
+                                                background: url("../img/dashboard/tire-wear.svg") 50%/auto 100% no-repeat;
+                                            }
+                                            .title { 
+                                                height: 2.3vh;
+                                                text-align: center;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                color: #242731;
+                                            }
+                                        }
+                                        .scale { 
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                            height: 10.37vh;
+                                            background: url("../img/dashboard/tire-wear-scale.svg") 50%/contain no-repeat;
+                                            span {
+                                                padding: 1.388vh 0 0 0;
+                                                font-weight: 700;
+                                                font-size: 2.222vh;
+                                                line-height: 130%;
+                                                color: #242731;
+                                            }
+                                        } 
+                                        &:hover {
+                                            background: #F6CC0D;
+                                            cursor: pointer;
+                                            .title {
+                                                color: #ffffff;
+                                            }
+                                            .scale {
+                                                background: url("../img/dashboard/hovers/tire-wear-scale-hover.svg") 50%/contain no-repeat;
+                                                span {
+                                                    color: #ffffff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:hover {
+                                        
+                                        cursor: pointer;
+                                        .energy {
+                                            background: #85F252;
+                                            .title {
+                                                color: #ffffff;
+                                            }
+                                            .scale {
+                                                background: url("../img/dashboard/hovers/energy-scale-hover.svg") 50%/contain no-repeat;
+                                                span {
+                                                    color: #ffffff;
+                                                }
+                                            }
+                                        }
+                                        .range {
+                                            background: #FF7E86;
+                                            cursor: pointer;
+                                            .title {
+                                                color: #ffffff;
+                                            }
+                                            .scale {
+                                                background: url("../img/dashboard/hovers/range-scale-hover.svg") 50%/contain no-repeat;
+                                                span {
+                                                    color: #ffffff;
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                             @media (max-width:600px) {
                                 .row-1__column {//border: 1px solid blue;
                                     min-width: 150px;
                                     min-height: 24vh;
-                                    flex: 1 1 auto;
+                                    flex: 1 1 25%;
                                     padding: 0 1vmin;
                                     .row-1__items {
-                                        background: #909090;
+                                        //background: #909090;
                                         height: 100%;
                                         border-radius: $border-radius;
                                     }
@@ -295,7 +529,7 @@ body {
                             //min-height: 100%;
 
                             .row-2__column {
-                                min-width: 408px;
+                                min-width: 46.9vh;
                                 min-height: 35vh;
                                 flex: 1 1 50%;
                                 padding: 0 calc($margin/2);
@@ -346,7 +580,7 @@ body {
                                                     font-size: 1.2vh;
                                                     line-height: 1.4vh;
                                                     color: #5F6165;
-                                                    border-radius: 16px;
+                                                    border-radius: 24px;
                                                     background: #ffffff;
                                                 }
                                                 input:checked + label {
@@ -544,17 +778,17 @@ body {
                                         display: flex;
                                         flex-direction: column;
                                         justify-content: space-between;
-                                        padding: 20px 24px 4% 24px;
+                                        padding: $padding;
                                         height: 100%;
                             
-                                        border-radius: 16px;
+                                        border-radius: $border-radius;
                                         background: #ffffff;
                                         .title {
-                                            margin: 0 0 20px 0;
+                                            margin: 0 0 2.222vh 0;
                             
                                             font-weight: 700;
-                                            font-size: 1.2vw;
-                                            line-height: 100%;
+                                            font-size: 1.9vh;
+                                            line-height: 2.457vh;
                                             color: #242731;
                                             span {
                                                 font-weight: 400;
@@ -565,7 +799,7 @@ body {
                                             justify-content: space-between;
                                             align-items: center;
                                             min-width: 100%;
-                                            margin: 0 0 14px 0;
+                                            margin: 0 0 1.3vh 0;
                                             .options-list {
                                                 display: flex;
                                                 flex-wrap:nowrap;
@@ -577,12 +811,12 @@ body {
                                                 }
                                                 label {
                                                     cursor: pointer;
-                                                    margin: 0 4px 0 0;
-                                                    padding: 0.37em 1em;
+                                                    margin: 0 0.37vh 0 0;
+                                                    padding: 0.524vh 1.311vh;
                             
                                                     font-weight: 700;
-                                                    font-size: 0.65vw;
-                                                    line-height: 16px;
+                                                    font-size: 1.2vh;
+                                                    line-height: 1.4vh;
                                                     color: #5F6165;
                                                     border-radius:24px;
                                                 }
@@ -597,7 +831,7 @@ body {
                                             }
                                             .miles {
                                                 font-weight: 700;
-                                                font-size: 0.75vw;
+                                                font-size: 1.5vh;
                                                 line-height: 100%;
                                                 color: #5F6165;
                                             }
@@ -630,11 +864,11 @@ body {
                                                     background: #F2F2F2;
                                                 }
                                                 .hour {
-                                                    padding: 8px 0 0 0;
+                                                    padding: 1vh 0 0 0;
                                                     width: 200%;
                                                     text-align: center;
                                                     font-weight: 400;
-                                                    font-size: 0.7vw;
+                                                    font-size: 1.5vh;
                                                     line-height: 18px;
                                                     color: #808191;
                                                     background-color: #ffffff;
@@ -666,7 +900,7 @@ body {
 
                             .row-3__column {//border: 1px solid blue;
                                 min-height: 21.7vh;
-                                flex: 1 1 313px;
+                                flex: 1 1 33.333%;
                                 padding: 0 1vmin;
                                 .row-3__items {
                                     background: #ffffff;
