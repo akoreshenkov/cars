@@ -92,7 +92,7 @@ body {
 
 .wrapper {
   display: flex;
-  flex: 0 1 115vmin;
+  flex: 0 1 117vmin;
   max-width: 100%;
   min-height: 100%;
 }
@@ -140,42 +140,57 @@ body {
   background: #F3F5F8 url("../img/dashboard.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(3) {
+  color: #c3c6ca;
   background: url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(3):hover {
   background: #f8fafd url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(4) {
+  position: relative;
   background: url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(4):after {
+  content: "new";
+  font-size: 0.8em;
+  color: #a1e083;
+  position: absolute;
+  right: 1vh;
+  top: 0;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(4):hover {
   background: #f8fafd url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(5) {
+  color: #c3c6ca;
   background: url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(5):hover {
   background: #f8fafd url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(6) {
+  color: #c3c6ca;
   background: url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(6):hover {
   background: #f8fafd url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(7) {
+  color: #c3c6ca;
   background: url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(7):hover {
   background: #f8fafd url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(8) {
+  color: #c3c6ca;
   background: url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(8):hover {
   background: #f8fafd url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(9) {
+  color: #c3c6ca;
   background: url("../img/messages.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(9):hover {
@@ -194,12 +209,14 @@ body {
   color: #5F6165;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .wrapper__column-left__bottom-item:nth-child(1) {
+  color: #c3c6ca;
   background: url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .wrapper__column-left__bottom-item:nth-child(1):hover {
   background: #f8fafd url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .wrapper__column-left__bottom-item:last-child {
+  color: #c3c6ca;
   margin: 0 0 0 0;
   background: url("../img/log-out.svg") 1vh 50%/1.85vh no-repeat;
 }
@@ -915,7 +932,7 @@ body {
   }
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 {
-  width: 93.6vmin;
+  width: 94vmin;
   overflow: hidden;
   border-radius: 1.5vh;
 }
@@ -1014,7 +1031,7 @@ body {
   flex: 1 1 auto;
   height: 1.4vh;
   margin: 0 1.48vh 0 0;
-  background: url("../img/dashboard/lightning.svg") 0 50%/1.4vh no-repeat;
+  background: url("../img/dashboard/lightning.svg") 0 50%/auto 1.4vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column .row-3__items .car .info div:nth-child(5) {
   font-size: 1.3vh;
@@ -1053,7 +1070,7 @@ body {
   background: url("../img/dashboard/jetta.png") 0 50%/contain no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column .row-3__items .six-car {
-  background: #a9a8a8;
+  background: #bebebe;
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column .row-3__items .six-car .picture {
   background: url("../img/dashboard/s-class.png") 0 50%/contain no-repeat;

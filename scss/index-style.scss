@@ -28,7 +28,7 @@ body {
 .wrapper {//border: 5px solid yellowgreen;
     display: flex;
 
-    flex: 0 1 115vmin;                  //изменение ширины на весь экран для больших моников
+    flex: 0 1 117vmin;                  //изменение ширины на весь экран для больших моников
     
     max-width: 100%;
     min-height: 100%;
@@ -78,50 +78,63 @@ body {
                         background: #F3F5F8 url("../img/dashboard.svg") 1vh 50%/1.85vh no-repeat;
                     }
                     &:nth-child(3) {
+                        color: #c3c6ca;
                         background: url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                     &:nth-child(4) {
+                        position: relative;
+                        &:after {
+                            content:"new";
+                            font-size: 0.8em;
+                            color: #a1e083;
+                            position: absolute;
+                            right: 1vh;
+                            top: 0;
+                        }
                         background: url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                     &:nth-child(5) {
+                        color: #c3c6ca;
                         background: url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                     &:nth-child(6) {
+                        color: #c3c6ca;
                         background: url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                     &:nth-child(7) {
+                        color: #c3c6ca;
                         background: url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                     &:nth-child(8) {
+                        color: #c3c6ca;
                         background: url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                     &:nth-child(9) {
+                        color: #c3c6ca;
                         background: url("../img/messages.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/messages.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                 }
-                
-                
             }
             .wrapper__column-left__bottom {
 
@@ -139,12 +152,14 @@ body {
 
                     color: #5F6165;
                     &:nth-child(1) {
+                        color: #c3c6ca;
                         background: url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
                             background: #f8fafd url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
                         }
                     }
                     &:last-child {
+                        color: #c3c6ca;
                         margin: 0 0 0 0;
                         background: url("../img/log-out.svg") 1vh 50%/1.85vh no-repeat;
                         &:hover {
@@ -893,7 +908,7 @@ body {
                         }
                     }
                     &__row-3 {//border: 1px solid red;
-                        width: 93.6vmin;
+                        width: 94vmin;
                         overflow: hidden;
                         border-radius: $border-radius;
                         
@@ -1000,7 +1015,7 @@ body {
                                                 height: 1.4vh;
                                                 margin: 0 1.48vh 0 0;
                         
-                                                background: url("../img/dashboard/lightning.svg") 0 50%/1.4vh no-repeat;
+                                                background: url("../img/dashboard/lightning.svg") 0 50%/auto 1.4vh no-repeat;
                                             }
                                             div:nth-child(5) {
                                                 font-size: 1.3vh;
@@ -1041,7 +1056,7 @@ body {
                                         }
                                     }
                                     .six-car {
-                                        background: #a9a8a8;
+                                        background: #bebebe;
                                         .picture {
                                             background: url("../img/dashboard/s-class.png") 0 50%/contain no-repeat;
                                         }
@@ -1237,4 +1252,3 @@ body {
         }
     } 
 }
-
