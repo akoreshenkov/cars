@@ -35,6 +35,9 @@ body {
     .wrapper__row {
         flex: 1 1 auto;
         display: flex;
+        details {
+            display: none;
+        }
         .wrapper__column-left {
             width: 21vmin;
             margin-right: $margin;

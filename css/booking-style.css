@@ -99,6 +99,9 @@ body {
   flex: 1 1 auto;
   display: flex;
 }
+.wrapper .wrapper__row details {
+  display: none;
+}
 .wrapper .wrapper__row .wrapper__column-left {
   width: 21vmin;
   margin-right: 2vh;
