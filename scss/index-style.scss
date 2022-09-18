@@ -249,7 +249,7 @@ details summary::-webkit-details-marker {
                     .profile {
                         height: 4.444vh;
                         width: 4.444vh;
-                        background: url("../img/profile.png") 50%/4.444vh no-repeat;
+                        background: url("../img/profile.png") 50%/105% no-repeat;
                         border-radius: 50%;
                     }
                 }
@@ -1143,9 +1143,6 @@ details summary::-webkit-details-marker {
                         width: 3vh;
                         height: 3vh;
                         background: url("../img/burger.svg") 50%/100% no-repeat;
-
-                        transform: rotate(0deg);
-                        transition: 0.2s linear;
                     }
                 }
                 .container {
@@ -1228,9 +1225,7 @@ details summary::-webkit-details-marker {
                     height: 60vh;
                     transition: 0.2s linear;
                     .burger {
-                        background: url("../img/cross.svg") 50%/120% no-repeat;
-                        transform: rotate(45deg);
-                        transition: 0.2s linear;
+                        background: url("../img/cross.svg") 50%/80% no-repeat;
                     }
                 }
             }

@@ -300,7 +300,7 @@ details > summary {
 .wrapper .wrapper__row .wrapper__column-right .header__column-right .profile {
   height: 4.444vh;
   width: 4.444vh;
-  background: url("../img/profile.png") 50%/4.444vh no-repeat;
+  background: url("../img/profile.png") 50%/105% no-repeat;
   border-radius: 50%;
 }
 .wrapper .wrapper__row .wrapper__column-right .content {
@@ -1144,8 +1144,6 @@ details > summary {
     width: 3vh;
     height: 3vh;
     background: url("../img/burger.svg") 50%/100% no-repeat;
-    transform: rotate(0deg);
-    transition: 0.2s linear;
   }
   .wrapper .wrapper__row details .container {
     margin: 1vh 0 0 0;
@@ -1226,9 +1224,7 @@ details > summary {
     transition: 0.2s linear;
   }
   .wrapper .wrapper__row details[open] .burger {
-    background: url("../img/cross.svg") 50%/120% no-repeat;
-    transform: rotate(45deg);
-    transition: 0.2s linear;
+    background: url("../img/cross.svg") 50%/80% no-repeat;
   }
   .wrapper .wrapper__row .wrapper__column-left {
     display: none;
