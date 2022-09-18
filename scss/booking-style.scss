@@ -268,14 +268,276 @@ body {
                     flex-direction: column; 
                     
                     h1 {
-                        margin-bottom: 2.777vh;
+                        margin-bottom: 2vmin;
 
                         font-size: 2.777vh;
                         font-weight: 700;
                         line-height: 130%;
                         color: #242731;
                     }
-                    
+                    .options { 
+                        display: flex;
+                        justify-content: space-between;
+                        height: 4vh;
+                        margin: 0 0 2.777vmin 0;
+                        select {
+                            padding: 0.555vh 1.85vh;
+
+                            border:none;
+                            border-radius: $border-radius;
+                            font-weight: 500;
+                            font-size: 1.48vh;
+                            line-height: 2.15vh;
+                            color: #5F6165;
+
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+
+                            cursor: pointer;
+                        }
+                        .new {
+                            width: 11.3vh;
+                            margin: 0 1.48vh 0 0;
+                            
+                            background: #ffffff url("../img/booking/arrow.svg") 85% 50%/ 1.296vh 0.833vh no-repeat;
+                        }
+                        .select-wrapper {
+                            flex: 1 1 auto;
+                            .mark {
+                                width: 13.25vh;
+                                height: 4vh;
+                                
+                                background: #ffffff url("../img/booking/arrow.svg") 85% 50%/ 1.296vh 0.833vh no-repeat;
+                            }
+                        }
+                        .view {
+                            width: 4.07vh;
+                            height: 4.07vh;
+                            margin: 0 1.48vh 0 0;
+
+                            border-radius: 50%;
+                            background: url("../img/booking/view.svg") 50%/ 100% no-repeat;
+                            cursor: pointer;
+                        }
+                        .filters {
+                            width: 4.07vh;
+                            height: 4.07vh;
+
+                            border-radius: 50%;
+                            background: url("../img/booking/filters.svg") 50%/ 100% no-repeat;
+                            cursor: pointer;
+                        }
+                    }
+                    .car-list { 
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        margin: 0 -1vmin;
+                        .card-container {
+                            flex: 1 1 30vh;
+                            //height: 24.722vh;
+                            padding: 0 1vmin;
+                            margin: 0 0 2vmin 0;
+                            .card {
+                                border-radius: $border-radius;
+                                padding: $padding;
+                                height: 100%;
+
+                                background: #ffffff;
+                                transition: 0.1s linear;
+                                &:hover {
+                                    transform: translateY(-0.6vh);
+                                    box-shadow: 0 1vh 1.5vh -1vh #bcbec9;
+                                    transition: 0.1s linear;
+                                }
+                                .row-1 { 
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 0 0 0.4vh 0;
+                                    .title {
+                                        display: inline-block;
+                                        //flex: 1 1 auto;
+
+                                        font-size: 1.666vh;
+                                        line-height: 2.13vh;
+                                        font-weight: 700;
+                                        cursor: pointer;
+                                        .title-link {
+                                            color: #242731;
+                                            &:visited {
+                                                color: #242731;
+                                            }
+                                        }
+                                    }
+                                    .like-label {
+                                        width: 1.85vh;
+                                        height: 1.666vh;
+                                        background: url("../img/booking/like.svg") 50%/ auto 1.666vh no-repeat;
+                                        cursor: pointer;
+                                    }
+                                    .like-input {
+                                        position: absolute;
+                                        left: -9999px;
+                                        &:checked + label {
+                                            background: url("../img/booking/like-hover.svg") 50%/ auto 1.666vh no-repeat;
+                                        }
+                                    }
+                                }
+                                .car-class {
+                                    font-size: 1.48vh;
+                                    line-height: 1.944vh;
+                                    font-weight: 400;
+                                    color: #72767C;
+
+                                    margin: 0 0 1.944vh 0;
+                                }
+                                .picture-link { 
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 9.722vh;
+                                    margin: 0 0 1.944vh 0;
+
+                                    background: url("../img/booking/audi.png") 50%/contain no-repeat;
+                                    color: #242731;
+                                    &:visited {
+                                        color: #242731;
+                                    }
+                                }
+                                .row-2 {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    span {
+                                        color: #72767C;
+                                        font-weight: 400;
+                                    }
+                                    &__item-1 {
+                                        position: relative;
+                                        padding: 0 0 0 2vh;
+                                        margin: 0 1.85vh 0 0;
+
+                                        font-size: 1.666vh;
+                                        line-height: 2.13vh;
+                                        font-weight: 400;
+                                        color: #72767C;
+                                        &:before {
+                                            content:"";
+                                            position: absolute;
+                                            top:50%;
+                                            left:0;
+                                            transform: translateY(-50%);
+                                            width: 1.574vh;
+                                            height: 1.574vh;
+                                            background: url("../img/booking/person.svg") 50%/ 1.5vh no-repeat;
+                                        }
+                                    }
+                                    &__item-2 {
+                                        position: relative;
+                                        padding: 0 0 0 2.3vh;
+                                        flex: 1 1 auto;
+
+                                        font-size: 1.4vh;
+                                        line-height: 2.13vh;
+                                        font-weight: 400;
+                                        color: #72767C;
+                                        &:before {
+                                            content:"";
+                                            position: absolute;
+                                            top:50%;
+                                            left:0;
+                                            transform: translateY(-50%);
+                                            width: 1.85vh;
+                                            height: 1.574vh;
+                                            background: url("../img/booking/arrows.svg") 50%/ 1.85vh 1.5vh no-repeat;
+                                        }
+                                    }
+                                    &__item-3 {
+                                        font-size: 1.666vh;
+                                        line-height: 2.13vh;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(1) {
+                                .picture-link {
+                                    background: url("../img/booking/porsche.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(2) {
+                                .picture-link {
+                                    background: url("../img/booking/audi-2.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(3) {
+                                .picture-link {
+                                    background: url("../img/booking/lada.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(4) {
+                                .picture-link {
+                                    background: url("../img/booking/toyota.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(7) {
+                                .picture-link {
+                                    background: url("../img/booking/lada-2.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(6) {
+                                .picture-link {
+                                    background: url("../img/booking/audi-2.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(5) {
+                                .picture-link {
+                                    background: url("../img/booking/audi.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(8) {
+                                .picture-link {
+                                    background: url("../img/booking/toyota.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(9) {
+                                .picture-link {
+                                    background: url("../img/booking/porsche.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(10) {
+                                .picture-link {
+                                    background: url("../img/booking/audi-2.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(11) {
+                                .picture-link {
+                                    background: url("../img/booking/audi.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(12) {
+                                .picture-link {
+                                    background: url("../img/booking/toyota.png") 50%/contain no-repeat;
+                                }
+                            }
+                            &:nth-child(15) {
+                                .picture-link {
+                                    background: url("../img/booking/lada-2.png") 50%/contain no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    .more {
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 1.666vh;
+                        line-height: 5vh;
+                        letter-spacing: 0.1vh;
+                        color: #72767C;
+                    }
                 }
                                             //все что выше только для первой страницы
             }
@@ -438,9 +700,8 @@ body {
                     }
                 }
                 .content {
-                    width: 100%;
-                    //flex: 1 0 81vh;
-                    flex: 1 1 auto;
+                
+                    flex: 1 1 85vh;
                     
                     border-radius: $border-radius;
                     overflow-y: auto;
@@ -453,11 +714,56 @@ body {
                         width: 0;
                         height: 0;
                     }
-                    .container__row-3 {//border: 1px solid red;
-                        width: 93.6vw;
-                        overflow: hidden;
-                        border-radius: $border-radius;
+                                                //все что ниже только для первой страницы
+    
+                    .container { //border: 1px solid red;
+                        min-height: 100%;
+                        display: flex;
+                        flex-direction: column; 
+                        
+                        h1 {
+                            margin: 2.777vmin 0;
+    
+                            font-size: 2.777vh;
+                            font-weight: 700;
+                            line-height: 130%;
+                            color: #242731;
+                        }
+                        .options { 
+                            display: flex;
+                            justify-content: space-between;
+                            height: 4vh;
+                            margin: 0 0 5vmin 0;
+                        }
+                        .car-list { 
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-wrap: wrap;
+    
+                            margin: 0 -1vmin;
+                            .card-container {
+                                flex: 1 1 30vh;
+                                //height: 24.722vh;
+                                padding: 0 1vmin;
+                                margin: 0 0 2vmin 0;
+                                .card {
+                                    padding: 2vh;
+                                    height: 100%;
+                                    transition: 0.1s linear;
+                                    &:hover {
+                                        transform: scale(0.96);
+                                        box-shadow: none;
+                                        transition: 0.1s linear;
+                                    }
+                                    .picture-link { 
+                                        height: 15.722vh;
+                                    }
+                                }
+                            }
+                        }
                     }
+                                                //все что выше только для первой страницы
                 }
             }
         }

@@ -312,11 +312,231 @@ body {
   flex-direction: column;
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container h1 {
-  margin-bottom: 2.777vh;
+  margin-bottom: 2vmin;
   font-size: 2.777vh;
   font-weight: 700;
   line-height: 130%;
   color: #242731;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .options {
+  display: flex;
+  justify-content: space-between;
+  height: 4vh;
+  margin: 0 0 2.777vmin 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .options select {
+  padding: 0.555vh 1.85vh;
+  border: none;
+  border-radius: 1.5vh;
+  font-weight: 500;
+  font-size: 1.48vh;
+  line-height: 2.15vh;
+  color: #5F6165;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .options .new {
+  width: 11.3vh;
+  margin: 0 1.48vh 0 0;
+  background: #ffffff url("../img/booking/arrow.svg") 85% 50%/1.296vh 0.833vh no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .options .select-wrapper {
+  flex: 1 1 auto;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .options .select-wrapper .mark {
+  width: 13.25vh;
+  height: 4vh;
+  background: #ffffff url("../img/booking/arrow.svg") 85% 50%/1.296vh 0.833vh no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .options .view {
+  width: 4.07vh;
+  height: 4.07vh;
+  margin: 0 1.48vh 0 0;
+  border-radius: 50%;
+  background: url("../img/booking/view.svg") 50%/100% no-repeat;
+  cursor: pointer;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .options .filters {
+  width: 4.07vh;
+  height: 4.07vh;
+  border-radius: 50%;
+  background: url("../img/booking/filters.svg") 50%/100% no-repeat;
+  cursor: pointer;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -1vmin;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container {
+  flex: 1 1 30vh;
+  padding: 0 1vmin;
+  margin: 0 0 2vmin 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card {
+  border-radius: 1.5vh;
+  padding: 2vh;
+  height: 100%;
+  background: #ffffff;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card:hover {
+  transform: translateY(-0.6vh);
+  box-shadow: 0 1vh 1.5vh -1vh #bcbec9;
+  transition: 0.1s linear;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0.4vh 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .title {
+  display: inline-block;
+  font-size: 1.666vh;
+  line-height: 2.13vh;
+  font-weight: 700;
+  cursor: pointer;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .title .title-link {
+  color: #242731;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .title .title-link:visited {
+  color: #242731;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .like-label {
+  width: 1.85vh;
+  height: 1.666vh;
+  background: url("../img/booking/like.svg") 50%/auto 1.666vh no-repeat;
+  cursor: pointer;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .like-input {
+  position: absolute;
+  left: -9999px;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .like-input:checked + label {
+  background: url("../img/booking/like-hover.svg") 50%/auto 1.666vh no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .car-class {
+  font-size: 1.48vh;
+  line-height: 1.944vh;
+  font-weight: 400;
+  color: #72767C;
+  margin: 0 0 1.944vh 0;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .picture-link {
+  display: inline-block;
+  width: 100%;
+  height: 9.722vh;
+  margin: 0 0 1.944vh 0;
+  background: url("../img/booking/audi.png") 50%/contain no-repeat;
+  color: #242731;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .picture-link:visited {
+  color: #242731;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-2 span {
+  color: #72767C;
+  font-weight: 400;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-2__item-1 {
+  position: relative;
+  padding: 0 0 0 2vh;
+  margin: 0 1.85vh 0 0;
+  font-size: 1.666vh;
+  line-height: 2.13vh;
+  font-weight: 400;
+  color: #72767C;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-2__item-1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1.574vh;
+  height: 1.574vh;
+  background: url("../img/booking/person.svg") 50%/1.5vh no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-2__item-2 {
+  position: relative;
+  padding: 0 0 0 2.3vh;
+  flex: 1 1 auto;
+  font-size: 1.4vh;
+  line-height: 2.13vh;
+  font-weight: 400;
+  color: #72767C;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-2__item-2:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1.85vh;
+  height: 1.574vh;
+  background: url("../img/booking/arrows.svg") 50%/1.85vh 1.5vh no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-2__item-3 {
+  font-size: 1.666vh;
+  line-height: 2.13vh;
+  font-weight: 500;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(1) .picture-link {
+  background: url("../img/booking/porsche.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(2) .picture-link {
+  background: url("../img/booking/audi-2.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(3) .picture-link {
+  background: url("../img/booking/lada.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(4) .picture-link {
+  background: url("../img/booking/toyota.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(7) .picture-link {
+  background: url("../img/booking/lada-2.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(6) .picture-link {
+  background: url("../img/booking/audi-2.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(5) .picture-link {
+  background: url("../img/booking/audi.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(8) .picture-link {
+  background: url("../img/booking/toyota.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(9) .picture-link {
+  background: url("../img/booking/porsche.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(10) .picture-link {
+  background: url("../img/booking/audi-2.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(11) .picture-link {
+  background: url("../img/booking/audi.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(12) .picture-link {
+  background: url("../img/booking/toyota.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container:nth-child(15) .picture-link {
+  background: url("../img/booking/lada-2.png") 50%/contain no-repeat;
+}
+.wrapper .wrapper__row .wrapper__column-right .content .container .more {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.666vh;
+  line-height: 5vh;
+  letter-spacing: 0.1vh;
+  color: #72767C;
 }
 
 @media (max-width: 1023px) {
@@ -465,8 +685,7 @@ body {
     border-radius: 50%;
   }
   .wrapper .wrapper__row .wrapper__column-right .content {
-    width: 100%;
-    flex: 1 1 auto;
+    flex: 1 1 85vh;
     border-radius: 1.5vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -477,9 +696,47 @@ body {
     width: 0;
     height: 0;
   }
-  .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 {
-    width: 93.6vw;
-    overflow: hidden;
-    border-radius: 1.5vh;
+  .wrapper .wrapper__row .wrapper__column-right .content .container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container h1 {
+    margin: 2.777vmin 0;
+    font-size: 2.777vh;
+    font-weight: 700;
+    line-height: 130%;
+    color: #242731;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .options {
+    display: flex;
+    justify-content: space-between;
+    height: 4vh;
+    margin: 0 0 5vmin 0;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -1vmin;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container {
+    flex: 1 1 30vh;
+    padding: 0 1vmin;
+    margin: 0 0 2vmin 0;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card {
+    padding: 2vh;
+    height: 100%;
+    transition: 0.1s linear;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card:hover {
+    transform: scale(0.96);
+    box-shadow: none;
+    transition: 0.1s linear;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .picture-link {
+    height: 15.722vh;
   }
 }
