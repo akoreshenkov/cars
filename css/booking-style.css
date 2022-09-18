@@ -602,7 +602,6 @@ details > summary {
     width: 3vh;
     height: 3vh;
     background: url("../img/burger.svg") 50%/100% no-repeat;
-    transform: rotate(0deg);
     transition: 0.2s linear;
   }
   .wrapper .wrapper__row details .container {
@@ -687,8 +686,7 @@ details > summary {
     transition: 0.2s linear;
   }
   .wrapper .wrapper__row details[open] .burger {
-    background: url("../img/cross.svg") 50%/120% no-repeat;
-    transform: rotate(45deg);
+    background: url("../img/cross.svg") 50%/80% no-repeat;
     transition: 0.2s linear;
   }
   .wrapper .wrapper__row .wrapper__column-left {
@@ -813,11 +811,26 @@ details > summary {
     transition: 0.1s linear;
   }
   .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card:hover {
-    transform: scale(0.96);
+    transform: none;
     box-shadow: none;
-    transition: 0.1s linear;
   }
   .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .picture-link {
     height: 15.722vh;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .title {
+    font-size: 2.5vh;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .like-label {
+    width: 2.85vh;
+    height: 2.666vh;
+    background: url("../img/booking/like.svg") 50%/auto 2.5vh no-repeat;
+    cursor: pointer;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .like-input {
+    position: absolute;
+    left: -9999px;
+  }
+  .wrapper .wrapper__row .wrapper__column-right .content .container .car-list .card-container .card .row-1 .like-input:checked + label {
+    background: url("../img/booking/like-hover.svg") 50%/auto 2.5vh no-repeat;
   }
 }
