@@ -251,7 +251,7 @@ details summary::-webkit-details-marker {
                     .profile {
                         height: 4.444vh;
                         width: 4.444vh;
-                        background: url("../img/profile.png") 50%/105% no-repeat;
+                        background: url("../img/profile.png") 50%/4.444vh 4.444vh no-repeat;
                         border-radius: 50%;
                     }
                 }
@@ -264,13 +264,26 @@ details summary::-webkit-details-marker {
                 overflow-y: auto;
                 overflow-x: hidden;
 
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-
                 &::-webkit-scrollbar {
-                    width: 0;
-                    height: 0;
+                    width: 1vh;
                 }
+                &::-webkit-scrollbar-track {
+                    background: #f5f5f5;        /* цвет дорожки */
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: #f5f5f5;    /* цвет плашки */
+                    border-radius: 20px;       /* закругления плашки */
+                    border: 0.3vh solid #f5f5f5;  /* padding вокруг плашки */
+                }
+                &:hover {
+                    &::-webkit-scrollbar-track {
+                        background: #f5f5f5;        /* цвет дорожки */
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #c3c6ca;    /* цвет плашки */
+                    }
+                }
+                
                                             //все что ниже только для первой страницы
 
                 .container { //border: 1px solid red;
@@ -844,14 +857,14 @@ details summary::-webkit-details-marker {
                                         .like-label {
                                             width: 2.85vh;
                                             height: 2.666vh;
-                                            background: url("../img/booking/like.svg") 50%/ auto 2.5vh no-repeat;
+                                            background: url("../img/booking/like.svg") 50%/2.85vh 2.666vh no-repeat;
                                             cursor: pointer;
                                         }
                                         .like-input {
                                             position: absolute;
                                             left: -9999px;
                                             &:checked + label {
-                                                background: url("../img/booking/like-hover.svg") 50%/ auto 2.5vh no-repeat;
+                                                background: url("../img/booking/like-hover.svg") 50%/2.85vh 2.666vh no-repeat;
                                             }
                                         }
                                     }

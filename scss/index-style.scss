@@ -960,12 +960,6 @@ details summary::-webkit-details-marker {
                                         padding: $padding;
                         
                                         border-radius: $border-radius;
-                                        transition: 0.1s linear;
-                                        &:hover {
-                                            transform: scale(0.96);
-                                            box-shadow: none;
-                                            transition: 0.1s linear;
-                                        }
                                         .recommend {//border: 1px solid red;
                                             position: relative;
                                             width: 100%;

@@ -980,12 +980,6 @@ details > summary {
   width: 100%;
   padding: 2vh;
   border-radius: 1.5vh;
-  transition: 0.1s linear;
-}
-.wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column .row-3__items .car:hover {
-  transform: scale(0.96);
-  box-shadow: none;
-  transition: 0.1s linear;
 }
 .wrapper .wrapper__row .wrapper__column-right .content .container__row-3 .row-3__flex-container .row-3__column .row-3__items .car .recommend {
   position: relative;
