@@ -83,6 +83,14 @@ body {
   padding: 3vh;
 }
 
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+
 .wrapper-container {
   display: flex;
   justify-content: center;
