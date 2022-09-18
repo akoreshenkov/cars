@@ -124,6 +124,9 @@ details > summary {
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top {
   margin-bottom: 2vh;
 }
+.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .blank {
+  cursor: default;
+}
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item {
   display: inline-block;
   width: 100%;
@@ -140,6 +143,7 @@ details > summary {
   font-size: 2.5vh;
   font-weight: 700;
   line-height: 140%;
+  background: none;
   margin: 0 0 2.5vh 0;
   background: url("../img/logo.svg") 0 50%/2.5vh no-repeat;
 }
@@ -153,12 +157,8 @@ details > summary {
   color: #c3c6ca;
   background: url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
 }
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(3):hover {
-  background: #f8fafd url("../img/assets.svg") 1vh 50%/1.85vh no-repeat;
-}
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(4) {
-  position: relative;
-  background: url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
+  background: #ffffff url("../img/booking.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(4):after {
   content: "new";
@@ -175,36 +175,24 @@ details > summary {
   color: #c3c6ca;
   background: url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
 }
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(5):hover {
-  background: #f8fafd url("../img/sell.svg") 1vh 50%/1.85vh no-repeat;
-}
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(6) {
   color: #c3c6ca;
   background: url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
-}
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(6):hover {
-  background: #f8fafd url("../img/buy.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(7) {
   color: #c3c6ca;
   background: url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
 }
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(7):hover {
-  background: #f8fafd url("../img/services.svg") 1vh 50%/1.85vh no-repeat;
-}
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(8) {
   color: #c3c6ca;
   background: url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
-}
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(8):hover {
-  background: #f8fafd url("../img/calendar.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(9) {
   color: #c3c6ca;
   background: url("../img/messages.svg") 1vh 50%/1.85vh no-repeat;
 }
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__top .wrapper__column-left__top-item:nth-child(9):hover {
-  background: #f8fafd url("../img/messages.svg") 1vh 50%/1.85vh no-repeat;
+.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .blank {
+  cursor: default;
 }
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .wrapper__column-left__bottom-item {
   display: inline-block;
@@ -222,16 +210,10 @@ details > summary {
   color: #c3c6ca;
   background: url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
 }
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .wrapper__column-left__bottom-item:nth-child(1):hover {
-  background: #f8fafd url("../img/settings.svg") 1vh 50%/1.85vh no-repeat;
-}
 .wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .wrapper__column-left__bottom-item:last-child {
   color: #c3c6ca;
   margin: 0 0 0 0;
   background: url("../img/log-out.svg") 1vh 50%/1.85vh no-repeat;
-}
-.wrapper .wrapper__row .wrapper__column-left .wrapper__column-left__bottom .wrapper__column-left__bottom-item:last-child:hover {
-  background: #f8fafd url("../img/log-out.svg") 1vh 50%/1.85vh no-repeat;
 }
 .wrapper .wrapper__row .wrapper__column-right {
   display: flex;
